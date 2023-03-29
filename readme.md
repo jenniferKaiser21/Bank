@@ -31,6 +31,20 @@ This project is a work in progress, and simulates the tasks that a traditional b
 
 In order to build this simulation, the Django Rest Framework is used to build the back-end API, so that various endpoints can take GET/POST requests with payload data for simulation.
 
+# Current endpoints:
+myaccount/ (GET REQUEST)
+
+<img src="https://github.com/jenniferKaiser21/Bank/blob/81df1ed2984fbbbf786b02b55b0f080e0ce5a381/images/myaccount_get.png">
+
+newaccount/ (POST REQUEST)
+
+<img src="https://github.com/jenniferKaiser21/Bank/blob/81df1ed2984fbbbf786b02b55b0f080e0ce5a381/images/newaccount_endpoint.png">
+
+transaction/\<int:id\> (GET REQUEST)
+
+<img src="https://github.com/jenniferKaiser21/Bank/blob/81df1ed2984fbbbf786b02b55b0f080e0ce5a381/images/transaction_endpoint_url_id.png">
+
+# Database Models
 The Accounts database table contains the following attributes:
     first_name (a character field)
     last_name (a character field)
