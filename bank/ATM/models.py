@@ -32,7 +32,7 @@ class Transactions(models.Model):
         (TRANSFER, 'Transfer'),
     ]
     
-    timestamp = models.DateTimeField()
+    timestamp = models.DateTimeField(auto_now_add=True)
     account_id = models.ForeignKey(Accounts, on_delete=models.PROTECT, related_name = "account_id")
     transaction_amt = models.DecimalField(max_digits = 20, decimal_places = 2)
     transaction_type = models.CharField(max_length=2, choices = TRANSACTION_TYPES)

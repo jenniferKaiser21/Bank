@@ -47,3 +47,10 @@ class ViewTransactionFromURL(APIView):
             return Response(serializer.data, status.HTTP_200_OK)
         except Transactions.DoesNotExist:
             return Response("Transaction does not exist", status.HTTP_404_NOT_FOUND)
+        
+class NewTransaction(APIView):
+    def post(self, request, *args, **kwargs):
+        serializer = TransactionsSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)

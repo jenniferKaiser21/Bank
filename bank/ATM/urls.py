@@ -6,4 +6,5 @@ urlpatterns = [
     path('myaccount/<int:id>', views.ViewAccountFromURL.as_view()),
     path('transaction/', views.ViewTransaction.as_view()),
     path('transaction/<int:id>', views.ViewTransactionFromURL.as_view()),
+    path('newtransaction/', views.NewTransaction.as_view()), 
 ]
