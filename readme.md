@@ -51,6 +51,7 @@ newtransaction/ (POST REQUEST)
 
 # Database Models
 The Accounts database table contains the following attributes:
+
     first_name (a character field)
     last_name (a character field)
     date_opened (a date field that is automatated using the auto_now_add = True clause)
@@ -59,6 +60,7 @@ The Accounts database table contains the following attributes:
     pin (a numeric code stored as a string with a length of 4)
 
 The Transactions database table contains the following attributes:
+
     timestamp (a date field that is automatated using the auto_now_add = True clause)
     account_id (a foreign key mapped to the Accounts.id primary key of the Accounts table)
     transaction_amt (a decimal field with a maximum of 20 digits and 2 decimal places)
