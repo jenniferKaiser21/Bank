@@ -1,4 +1,4 @@
-# Random Strong Password Generator
+# Bank/ATM Django REST API 
 <p>Jennifer Kaiser 2023 
 <p>
 <a href="https://www.jenniferkaiser.tech">www.jenniferkaiser.tech</a>
