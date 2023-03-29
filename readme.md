@@ -44,6 +44,11 @@ transaction/\<int:id\> (GET REQUEST)
 
 <img src="https://github.com/jenniferKaiser21/Bank/blob/81df1ed2984fbbbf786b02b55b0f080e0ce5a381/images/transaction_endpoint_url_id.png">
 
+newtransaction/ (POST REQUEST)
+
+<img src="https://github.com/jenniferKaiser21/Bank/blob/595419e08c1bffdfbe1cbc35790d8b1dd9db718d/images/newtransaction_post_request.png">
+
+
 # Database Models
 The Accounts database table contains the following attributes:
     first_name (a character field)
