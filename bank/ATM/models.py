@@ -7,6 +7,7 @@ class Accounts(models.Model):
     date_opened = models.DateField(auto_now_add=True)
     last_updated = models.DateField(auto_now=True)
     balance = models.DecimalField(max_digits = 20, decimal_places = 2)
+    pin = models.CharField(max_length = 4, default="1234")
     
     class Meta:
         verbose_name = "Account"
